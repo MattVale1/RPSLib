@@ -1,2 +1,4 @@
 # Visual Studio cache directory
-.vs/
+.vs
+bin/Debug
+obj
