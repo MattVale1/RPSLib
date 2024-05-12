@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace RPS {
 
-    public class MathsUtil {
+    public class MathsUtils {
 
         public class Distances {
 

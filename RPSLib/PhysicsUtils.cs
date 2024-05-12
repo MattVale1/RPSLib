@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace RPS {
 
-    public class PhysicsUtil {
+    public class PhysicsUtils {
 
         public class Raycast {
 
