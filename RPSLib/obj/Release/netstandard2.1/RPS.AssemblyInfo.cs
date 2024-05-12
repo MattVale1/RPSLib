@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RPS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8ff1d3d190456e64c5b4f0ebf7208472d0a5a3c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+018bf393059feb004dfe91ed9da1f14e9d8f7e63")]
 [assembly: System.Reflection.AssemblyProductAttribute("RPS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RPS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
