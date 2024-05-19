@@ -11,7 +11,7 @@ Create a release build of the project, this will produce an RPS.dll file.
 You can simply copy/paste this file into your Unity project or use the one provided in the bin.
 
 # Usage:
-Within your code, you can access the DLL by simply ryping "RPS." and then the class you require.
+Within your code, you can access the DLL by simply typing `RPS.` and then the class you require.
 ### Examples:
 ```
 // Returns a GameObject at the mouse position.
