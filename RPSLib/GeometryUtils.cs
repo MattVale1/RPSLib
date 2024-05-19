@@ -1,8 +1,7 @@
-﻿/* Author:			Matthew Vale
- * Role:					Lead Game Developer
+﻿/* Author:		Matthew Vale
+ * Role:		Lead Game Developer
  * Company:		Red Phoenix Studios
 */
-
 using UnityEngine;
 
 namespace RPS {

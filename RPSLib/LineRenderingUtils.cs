@@ -1,8 +1,7 @@
-﻿/* Author:			Matthew Vale
- * Role:					Lead Game Developer
+﻿/* Author:		Matthew Vale
+ * Role:		Lead Game Developer
  * Company:		Red Phoenix Studios
 */
-
 using UnityEngine;
 
 namespace RPS {
@@ -12,7 +11,7 @@ namespace RPS {
     /// </summary>
     public class LineRenderingUtils {
 
-        public class LineRenderering {
+        public class LineRendering {
 
             /// <summary>
             /// Takes a simple 2-point line renderer and draws it.

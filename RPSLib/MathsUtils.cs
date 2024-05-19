@@ -1,5 +1,5 @@
-﻿/* Author:		    Matthew Vale
- * Role:		            Lead Game Developer
+﻿/* Author:		Matthew Vale
+ * Role:		Lead Game Developer
  * Company:		Red Phoenix Studios
 */
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ namespace RPS {
         public class Distances {
 
             /// <summary>
-			/// Get the distance between 2 positions using square root.
+			/// Get the distance between 2 positions using square root, fast, but DON'T use for accuracy!
 			/// </summary>
 			public static float GetOptimizedDistance(Vector3 from, Vector3 to) { return (to - from).sqrMagnitude; }
 
@@ -25,7 +25,7 @@ namespace RPS {
                 byte closestIndex = 0;
                 float minDistSqr = Mathf.Infinity;
                 for (int i = 0; i < targets.Count; i++) {
-                    float dSqrToTarget = (targets[i].transform.position - from).sqrMagnitude;
+                    float dSqrToTarget = GetOptimizedDistance(targets[i].transform.position, from);
                     if (dSqrToTarget < minDistSqr) {
                         minDistSqr = dSqrToTarget;
                         closestIndex = (byte)i;
@@ -33,6 +33,7 @@ namespace RPS {
                 }
                 return targets[closestIndex];
             }
+
         }
 
     }
