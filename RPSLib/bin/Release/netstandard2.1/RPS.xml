@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RPS</name>
+    </assembly>
+    <members>
+        <member name="T:RPS.Debug">
+            <summary>
+            Class to handle console printing with various styles.
+            </summary>
+        </member>
+        <member name="M:RPS.Debug.Log(System.String,RPS.DebugStyle,System.Boolean)">
+            <summary>
+            Log something to the console using a specific style.
+            </summary>
+            <param name="message">The message to print.</param>
+            <param name="style">The style to use.</param>
+            <param name="pauseEditor">Should we pause the Unity Editor for this error?</param>
+        </member>
+        <member name="T:RPS.DebugStyle">
+            <summary>
+            Various styling types.
+            </summary>
+        </member>
+        <member name="M:RPS.GeometryUtils.Visibility.IsTargetVisible(UnityEngine.Camera,UnityEngine.Vector3)">
+            <summary>
+            Given a Vector3 point, is that point currently visible to the camera?
+            </summary>
+        </member>
+        <member name="T:RPS.LineRenderingUtils">
+            <summary>
+            For all things LineRenderer!
+            </summary>
+        </member>
+        <member name="M:RPS.LineRenderingUtils.LineRendering.SetPositionsOfLineRenderer(UnityEngine.LineRenderer,UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Takes a simple 2-point line renderer and draws it.
+            </summary>
+        </member>
+        <member name="M:RPS.MathsUtils.Distances.GetOptimizedDistance(UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Get the distance between 2 positions using square root, fast, but DON'T use for accuracy!
+            </summary>
+        </member>
+        <member name="M:RPS.MathsUtils.Distances.GetOptimizedClosestGameObject(UnityEngine.Vector3,System.Collections.Generic.List{UnityEngine.GameObject})">
+            <summary>
+            Get the closest GameObject to a point from a List of GameObjects.
+            </summary>
+            <param name="from">Point of origin.</param>
+            <param name="targets">List of possible targets.</param>
+        </member>
+        <member name="M:RPS.MathsUtils.Gradients.SoftLimit(System.Single)">
+            <summary>
+            Useful for smooth animations. Equation is: 
+            <code>x / x + 1</code>
+            See <a href="LINK">https://www.desmos.com/calculator/0mxrzgwqgt</a>
+            </summary>
+        </member>
+        <member name="M:RPS.PhysicsUtils.Raycast.GetGameObjectAtMousePosition(System.Single,UnityEngine.LayerMask,UnityEngine.Camera)">
+            <summary>
+            Get a reference to the GameObject at the mouse position using a raycast.
+            </summary>
+        </member>
+        <member name="T:RPS.Utils.FPSUtil">
+            <summary>
+            Frame rate and VSync setting.
+            </summary>
+        </member>
+        <member name="M:RPS.Utils.FPSUtil.SetFramesPerSecond(System.Int32,RPS.Utils.FPSUtil.VSyncMode)">
+            <summary>
+            Set the Application's target framerate and VSync mode (default ON).
+            </summary>
+        </member>
+        <member name="M:RPS.Utils.FPSUtil.SetVSyncMode(RPS.Utils.FPSUtil.VSyncMode)">
+            <summary>
+            Set the Application's vertical sync mode.
+            </summary>
+        </member>
+        <member name="T:RPS.Utils.TimeUtil">
+            <summary>
+            Game time manipulation.
+            </summary>
+        </member>
+    </members>
+</doc>
