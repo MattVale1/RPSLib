@@ -36,6 +36,20 @@ namespace RPS {
 
         }
 
+        public class Gradients {
+
+            /// <summary>
+            /// Useful for smooth animations. Equation is: 
+            /// <code>x / x + 1</code>
+            /// See <a href="LINK">https://www.desmos.com/calculator/0mxrzgwqgt</a>
+            /// </summary>
+            public static float SoftLimit (float x) {
+                x = Mathf.Max(x, 0);
+                return x / (x + 1);
+            }
+
+        }
+
     }
 
 }
