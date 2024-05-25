@@ -16,14 +16,8 @@
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>assemblies\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.InputForUIModule">
-      <HintPath>assemblies\UnityEngine.InputForUIModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
       <HintPath>assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.InputModule">
-      <HintPath>assemblies\UnityEngine.InputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
       <HintPath>assemblies\UnityEngine.PhysicsModule.dll</HintPath>
