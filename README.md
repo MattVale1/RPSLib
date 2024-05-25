@@ -1,5 +1,5 @@
-# What's This?
-A (currently) small collection of common code that is used throughout all of my Unity projects. The idea is to:
+# RPSLib:
+A small (but growing) collection of common code that is used throughout all of my Unity projects. The idea is to:
 - Save time re-writing the same code each project or in various classes.
 - Provide optimized code for common operations, aiding in high performance for runtime.
 - Provide easy to use methods for more complex algorithms.
@@ -21,15 +21,13 @@ ghostBuilding = RPS.PhysicsUtils.Raycast.GetGameObjectAtMousePositionUsingRay(ra
 inspectedDistance = RPS.MathsUtils.Distances.GetOptimizedDistance(fromPos, houses[i].transform.position);
 ```
 
-# Current Util classes:
-```
-GeometryUtils.cs (Object visibility)
-
-LineRenderingUtils.cs (Line Rendering helper)
-
-MathsUtils.cs (Distances, closest objects)
-
-PhysicsUtils.cs (Raycasting)
-
-Utils.cs (uncategorised, probably be removed later)
-```
+# Class list and functions:
+| Class  | Description |
+| ------------- | ------------- |
+| Debug  | For console logging with custom styles. |
+| GemoetryUtils  | Checking if mesh is visible. |
+| LineRenderingUtils  | For performing various actions with LineRenderers. |
+| MathsUtils  | Various maths functions. Currently distance checks and curves. |
+| PhysicsUtils  | Raycasting related functions, including getting GameObject at mouse. |
+| Pooling | For object pooling. Returns a list of pooled objects.
+| Utils  | Uncategorised helpers. Will likely move them into specific classes soon. |
