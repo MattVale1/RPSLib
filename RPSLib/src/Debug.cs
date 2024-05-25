@@ -7,7 +7,7 @@ namespace RPS {
     /// <summary>
     /// Class to handle console printing with various styles.
     /// </summary>
-    public static class Debug {
+    public class Debug {
 
         /// <summary>
         /// Various styling types.
