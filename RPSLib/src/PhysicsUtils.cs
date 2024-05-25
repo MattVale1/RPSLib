@@ -18,7 +18,7 @@ namespace RPS {
 
                 if (sourceCamera == null) {
                     if (Camera.main == null) {
-                        Debug.Log("No Camera in scene! Set a Main Camera or pass one into this method.", Debug.DebugStyle.CriticalError, true);
+                        Debug.Log("No Camera in scene! Set a Main Camera or pass one into this method.", Debug.Style.CriticalError, true);
                         return null;
                     }
                     ray = Camera.main.ScreenPointToRay(Input.mousePosition);
