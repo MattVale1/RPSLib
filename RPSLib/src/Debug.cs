@@ -10,6 +10,17 @@ namespace RPS {
     public static class Debug {
 
         /// <summary>
+        /// Various styling types.
+        /// </summary>
+        public enum DebugStyle {
+            Normal,
+            Success,
+            Warning,
+            Error,
+            CriticalError
+        }
+
+        /// <summary>
         /// Log something to the console using a specific style.
         /// </summary>
         /// <param name="message">The message to print.</param>
@@ -18,7 +29,7 @@ namespace RPS {
         public static void Log(string message, DebugStyle style = DebugStyle.Normal, bool pauseEditor = false) {
             switch (style) {
                 case DebugStyle.Normal:
-                    UnityEngine.Debug.Log(message);                    
+                    UnityEngine.Debug.Log(message);
                     break;
                 case DebugStyle.Success:
                     UnityEngine.Debug.Log("<color=green>" + message + "</color>");
@@ -34,20 +45,10 @@ namespace RPS {
                     break;
             }
 
-            if (pauseEditor) UnityEngine.Debug.Break();
+            if (pauseEditor)
+                UnityEngine.Debug.Break();
         }
-        
-    }
 
-    /// <summary>
-    /// Various styling types.
-    /// </summary>
-    public enum DebugStyle {
-        Normal,
-        Success,
-        Warning,
-        Error,
-        CriticalError
     }
 
 }
