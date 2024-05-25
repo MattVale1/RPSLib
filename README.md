@@ -17,7 +17,7 @@ Within your code, you can access the DLL by simply typing `RPS.` and then the cl
 // Returns a GameObject at the mouse position.
 clickedObject = RPS.PhysicsUtils.Raycast.GetGameObjectAtMousePosition(rayDistance, buildingMask, mainCamera);
 
-// Returns a float value representing the distance between 2 objects, using square root.
+// Returns a float value representing the distance between 2 objects, using square magnitude.
 inspectedDistance = RPS.MathsUtils.Distances.GetFastDistance(fromPos, toPos);
 ```
 
