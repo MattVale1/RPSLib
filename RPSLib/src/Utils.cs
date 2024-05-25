@@ -19,6 +19,11 @@ namespace RPS {
             /// Set the Application's target framerate and VSync mode (default ON).
             /// </summary>
             public static void SetFramesPerSecond(int targetFPS, VSyncMode vsync = VSyncMode.ON) {
+				if (vsync == VSyncMode.ON) {
+					QualitySettings.vSyncCount = 1;
+				} else {
+                    QualitySettings.vSyncCount = 0;
+                }
 				Application.targetFrameRate = targetFPS;
             }
 			
