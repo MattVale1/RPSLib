@@ -1,5 +1,5 @@
 ﻿/* Author:		Matthew Vale
- * Role:        Lead Game Developer
+ * Role:		Lead Game Developer
  * Company:		Red Phoenix Studios
 */
 using UnityEngine;
@@ -18,7 +18,7 @@ namespace RPS {
 
                 if (sourceCamera == null) {
                     if (Camera.main == null) {
-                        Debug.Log("No Camera in scene! Set a Main Camera or pass one into this method.", DebugStyle.CriticalError, true);
+                        Debug.Log("No Camera in scene! Set a Main Camera or pass one into this method.", Debug.DebugStyle.CriticalError, true);
                         return null;
                     }
                     ray = Camera.main.ScreenPointToRay(Input.mousePosition);
