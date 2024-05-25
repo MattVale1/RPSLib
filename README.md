@@ -15,10 +15,10 @@ Within your code, you can access the DLL by simply typing `RPS.` and then the cl
 ### Examples:
 ```
 // Returns a GameObject at the mouse position.
-ghostBuilding = RPS.PhysicsUtils.Raycast.GetGameObjectAtMousePositionUsingRay(rayDistance, buildingMask, mainCamera);
+clickedObject = RPS.PhysicsUtils.Raycast.GetGameObjectAtMousePosition(rayDistance, buildingMask, mainCamera);
 
 // Returns a float value representing the distance between 2 objects, using square root.
-inspectedDistance = RPS.MathsUtils.Distances.GetOptimizedDistance(fromPos, houses[i].transform.position);
+inspectedDistance = RPS.MathsUtils.Distances.GetFastDistance(fromPos, toPos);
 ```
 
 # Class list and functions:
@@ -29,5 +29,5 @@ inspectedDistance = RPS.MathsUtils.Distances.GetOptimizedDistance(fromPos, house
 | LineRenderingUtils  | For performing various actions with LineRenderers. |
 | MathsUtils  | Various maths functions. Currently distance checks and curves. |
 | PhysicsUtils  | Raycasting related functions, including getting GameObject at mouse. |
-| Pooling | For object pooling. Returns a list of pooled objects.
+| Pooling | For object pooling. Returns/iterates a list of pooled objects.
 | Utils  | Uncategorised helpers. Will likely move them into specific classes soon. |
