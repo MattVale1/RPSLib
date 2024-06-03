@@ -30,14 +30,23 @@ namespace RPS {
         /// Sets a specific scene active. Determines the lighting and which scene new Objects are spawned in.
         /// </summary>
         public void SetSceneActive(string sceneName) {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
+            try {
+                SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
+            } catch {
+                Debug.Log("ActiveSceneHandler :: Could not set active scene: " + sceneName + ". Does not exist, or is not in build settings.", Debug.Style.CriticalError);
+            }            
         }
 
         /// <summary>
         /// Unload the scene from memory and destroy all GameObjects in that scene.
         /// </summary>
         public void UnloadScene(string sceneName) {
-            SceneManager.UnloadSceneAsync(sceneName);
+            try {
+                SceneManager.UnloadSceneAsync(sceneName);
+            } catch {
+                Debug.Log("ActiveSceneHandler :: Could not unload scene: " + sceneName + ". Does not exist, or is not in build settings.", Debug.Style.CriticalError);
+            }
+            
         }
 
     }
