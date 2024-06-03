@@ -1,5 +1,5 @@
-﻿/* Author:		    Matthew Vale
- * Role:		        Lead Game Developer
+﻿/* Author:		Matthew Vale
+ * Role:        Lead Game Developer
  * Company:		Red Phoenix Studios
 */
 using UnityEngine.SceneManagement;
@@ -10,8 +10,6 @@ namespace RPS {
     /// Various methods to handle scene loading.
     /// </summary>
     public class SceneManagement {
-
-
 
         /// <summary>
         /// Load a given scene and optionally set it active.
