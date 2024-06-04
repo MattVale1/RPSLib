@@ -81,6 +81,11 @@
             Unload the scene from memory and destroy all GameObjects in that scene.
             </summary>
         </member>
+        <member name="M:RPS.SceneManagement.NavigateSceneBack(System.Boolean)">
+            <summary>
+            Navigate back to the previously loaded scene and optionally unload this one.
+            </summary>
+        </member>
         <member name="T:RPS.Utils.FPSUtil">
             <summary>
             Frame rate and VSync setting.
