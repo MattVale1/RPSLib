@@ -19,6 +19,9 @@ clickedObject = RPS.PhysicsUtils.Raycast.GetGameObjectAtMousePosition(rayDistanc
 
 // Returns a float value representing the distance between 2 objects, using square magnitude.
 inspectedDistance = RPS.MathsUtils.Distances.GetFastDistance(fromPos, toPos);
+
+// If we loaded the current scene Additively, go back to the previous scene and set it as the active scene.
+RPS.SceneManagement.NavigateSceneBack(true);
 ```
 
 # Class list and functions:
@@ -30,4 +33,5 @@ inspectedDistance = RPS.MathsUtils.Distances.GetFastDistance(fromPos, toPos);
 | MathsUtils  | Various maths functions. Currently distance checks and curves. |
 | PhysicsUtils  | Raycasting related functions, including getting GameObject at mouse. |
 | Pooling | For object pooling. Returns/iterates a list of pooled objects.
+| SceneManagement | For more complex scene handling. Including Additive scene loading and a back stack for navigating to previously loaded scenes.
 | Utils  | Uncategorised helpers. Will likely move them into specific classes soon. |
