@@ -89,7 +89,7 @@ namespace RPS {
             if (_hideUI)
                 ToggleUI(true);
 
-            callback?.Invoke(true);
+            callback?.Invoke(false);
 
         }
 
