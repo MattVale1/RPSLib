@@ -39,7 +39,7 @@ RPS.ScreenshotHandler.TakeScreenshot("Screenshot", true, true, RPS.ScreenshotHan
 | Class  | Description |
 | ------------- | ------------- |
 | Debug  | For console logging with custom styles. |
-| GemoetryUtils  | Checking if mesh is visible. |
+| GeometryUtils  | Checking if mesh is visible. |
 | LineRenderingUtils  | For performing various actions with LineRenderers. |
 | MathsUtils  | Various maths functions. Currently distance checks and curves. |
 | PhysicsUtils  | Raycasting related functions, including getting GameObject at mouse. |
