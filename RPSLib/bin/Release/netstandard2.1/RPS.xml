@@ -86,6 +86,21 @@
             Navigate back to the previously loaded scene and optionally unload this one.
             </summary>
         </member>
+        <member name="T:RPS.ScreenshotHandler">
+            <summary>
+            Handles taking screenshots of the game. Saves screenshots to user desktop.
+            </summary>
+        </member>
+        <member name="M:RPS.ScreenshotHandler.TakeScreenshot(System.String,System.Boolean,System.Boolean,RPS.ScreenshotHandler.FileExtension,System.Boolean)">
+            <summary>
+            Take a screenshot of the game window and save to user desktop.
+            </summary>
+            <param name="screenshotName">Custom name for the screenshot.</param>
+            <param name="includeTime">Add a date time extension to the end of the file name.</param>
+            <param name="hideUI">Hide in-game UI?</param>
+            <param name="fileExtension">File extension to use. PNG or JPG.?</param>
+            <param name="showDebug">Print helpful Debugs to assist errors.</param>
+        </member>
         <member name="T:RPS.Utils.FPSUtil">
             <summary>
             Frame rate and VSync setting.
