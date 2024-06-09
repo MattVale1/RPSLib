@@ -1,14 +1,22 @@
-# RPSLib:
+# RPSLib DLL:
 A small (but growing) collection of common code that is used throughout all of my Unity projects. The idea is to:
 - Save time re-writing the same code each project or in various classes.
 - Provide optimized code for common operations, aiding in high performance for runtime.
 - Provide easy to use methods for more complex algorithms.
 
-Most of the classes are currently Utility classes; Commonly used code that can be accessed from anywhere in your project.
+ℹ️ Most of the classes are currently Utility classes; Commonly used code that can be accessed from anywhere in your project.
+
+# RPSLib.unitypackage:
+A Unity package called "RPSLib" is also included in this repo, this contains various scripts, prefabs, render pipeline configs, intro scene and artwork. 
+
+⚠️ The Red Phoenix Studios logo included in the Unity package is **NOT** for reuse or modification.
+
+⚠️ A third-party asset is included in this package, "LeanTween". This is the free edition and should also not be redistributed. Credit to [LeanTween](https://assetstore.unity.com/packages/tools/animation/leantween-3595) by [dentedpixel](https://github.com/dentedpixel/LeanTween)
 
 # Installation:
-Create a release build of the project, this will produce an RPS.dll file.
-You can simply copy/paste this file into your Unity project or use the one provided in the bin.
+Create a release build of the project, this will produce a RPS.dll and RPS.xml file, simply copy/paste these file into your Unity project.
+Or, you can use the files provided in the bin.
+The RPS.unitypackage can also simply be dropped into your project. 
 
 # Usage:
 Within your code, you can access the DLL by simply typing `RPS.` and then the class you require, or by importing RPS at the top of your file with `using RPS;`.
