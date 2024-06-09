@@ -30,6 +30,9 @@ inspectedDistance = RPS.MathsUtils.Distances.GetFastDistance(fromPos, toPos);
 
 // If we loaded the current scene Additively, go back to the previous scene and set it as the active scene.
 RPS.SceneManagement.NavigateSceneBack(true);
+
+// Take a screenshot with some optional params (file name, include DateTime, hide UI, file extension and debug logging.
+RPS.ScreenshotHandler.TakeScreenshot("Screenshot", true, true, RPS.ScreenshotHandler.FileExtension.PNG, true);
 ```
 
 # Class list and functions:
@@ -42,4 +45,5 @@ RPS.SceneManagement.NavigateSceneBack(true);
 | PhysicsUtils  | Raycasting related functions, including getting GameObject at mouse. |
 | Pooling | For object pooling. Returns/iterates a list of pooled objects.
 | SceneManagement | For more complex scene handling. Including Additive scene loading and a back stack for navigating to previously loaded scenes.
+| ScreenshotHandler | For capturing screenshots in-game. Offers optional file formats, custom filename and the option to hide all UI while capturing. |
 | Utils  | Uncategorised helpers. Will likely move them into specific classes soon. |
