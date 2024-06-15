@@ -99,13 +99,13 @@ namespace RPS {
 
             _sceneStack.Push(scene);
 
-            DebugStackState();
+            //DebugStackState();
         }
 
         private static void RemoveCurrentSceneFromStack() {
             _sceneStack.Pop();
 
-            DebugStackState();
+            //DebugStackState();
         }
 
         private static void ClearSceneStack() {
