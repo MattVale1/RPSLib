@@ -61,6 +61,17 @@
             Get a reference to the GameObject at the mouse position using a raycast.
             </summary>
         </member>
+        <member name="M:RPS.Pooling.PoolGameObjects(UnityEngine.GameObject,System.Int32,UnityEngine.Transform)">
+            <summary>
+            Pool X GameObject N times with an optional parent Transform.
+            </summary>
+            <returns>The list of pooled objects.</returns>
+        </member>
+        <member name="M:RPS.Pooling.GetNextObjectInPool(UnityEngine.GameObject[])">
+            <summary>
+            Get the next available object from a given pool.
+            </summary>
+        </member>
         <member name="T:RPS.SceneManagement">
             <summary>
             Various methods to handle scene loading.
