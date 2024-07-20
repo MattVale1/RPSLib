@@ -1,0 +1,24 @@
+/* Author:		Matthew Vale
+ * Role:		Lead Game Developer
+ * Company:		Red Phoenix Studios
+*/
+using UnityEngine;
+
+public class #SCRIPTNAME# : MonoBehaviour {
+
+    #region Variables - Use Sub-regions
+
+    #endregion
+
+
+    #region Setup
+    private void Awake() {
+        CacheVars();
+    }
+
+    private void CacheVars() {
+
+    }
+    #endregion
+
+}

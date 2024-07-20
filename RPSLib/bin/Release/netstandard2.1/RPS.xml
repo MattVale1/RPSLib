@@ -9,18 +9,18 @@
             Class to handle console printing with various styles.
             </summary>
         </member>
-        <member name="M:RPS.Debug.Log(System.String,RPS.DebugStyle,System.Boolean)">
+        <member name="T:RPS.Debug.Style">
+            <summary>
+            Various styling types.
+            </summary>
+        </member>
+        <member name="M:RPS.Debug.Log(System.String,RPS.Debug.Style,System.Boolean)">
             <summary>
             Log something to the console using a specific style.
             </summary>
             <param name="message">The message to print.</param>
             <param name="style">The style to use.</param>
             <param name="pauseEditor">Should we pause the Unity Editor for this error?</param>
-        </member>
-        <member name="T:RPS.DebugStyle">
-            <summary>
-            Various styling types.
-            </summary>
         </member>
         <member name="M:RPS.GeometryUtils.Visibility.IsTargetVisible(UnityEngine.Camera,UnityEngine.Vector3)">
             <summary>
@@ -37,12 +37,12 @@
             Takes a simple 2-point line renderer and draws it.
             </summary>
         </member>
-        <member name="M:RPS.MathsUtils.Distances.GetOptimizedDistance(UnityEngine.Vector3,UnityEngine.Vector3)">
+        <member name="M:RPS.MathsUtils.Distances.GetFastDistance(UnityEngine.Vector3,UnityEngine.Vector3)">
             <summary>
-            Get the distance between 2 positions using square root, fast, but DON'T use for accuracy!
+            Get the distance between 2 positions using square magnitude.
             </summary>
         </member>
-        <member name="M:RPS.MathsUtils.Distances.GetOptimizedClosestGameObject(UnityEngine.Vector3,System.Collections.Generic.List{UnityEngine.GameObject})">
+        <member name="M:RPS.MathsUtils.Distances.GetClosestGameObject(UnityEngine.Vector3,System.Collections.Generic.List{UnityEngine.GameObject})">
             <summary>
             Get the closest GameObject to a point from a List of GameObjects.
             </summary>
@@ -60,6 +60,46 @@
             <summary>
             Get a reference to the GameObject at the mouse position using a raycast.
             </summary>
+        </member>
+        <member name="T:RPS.SceneManagement">
+            <summary>
+            Various methods to handle scene loading.
+            </summary>
+        </member>
+        <member name="M:RPS.SceneManagement.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode,System.Boolean)">
+            <summary>
+            Load a given scene and optionally set it active.
+            </summary>
+        </member>
+        <member name="M:RPS.SceneManagement.SetSceneActive(System.String)">
+            <summary>
+            Sets a specific scene active. Determines the lighting and which scene new Objects are spawned in.
+            </summary>
+        </member>
+        <member name="M:RPS.SceneManagement.UnloadScene(System.String)">
+            <summary>
+            Unload the scene from memory and destroy all GameObjects in that scene.
+            </summary>
+        </member>
+        <member name="M:RPS.SceneManagement.NavigateSceneBack(System.Boolean)">
+            <summary>
+            Navigate back to the previously loaded scene and optionally unload this one.
+            </summary>
+        </member>
+        <member name="T:RPS.ScreenshotHandler">
+            <summary>
+            Handles taking screenshots of the game. Saves screenshots to user desktop.
+            </summary>
+        </member>
+        <member name="M:RPS.ScreenshotHandler.TakeScreenshot(System.String,System.Boolean,System.Boolean,RPS.ScreenshotHandler.FileExtension,System.Boolean)">
+            <summary>
+            Take a screenshot of the game window and save to user desktop.
+            </summary>
+            <param name="screenshotName">Custom name for the screenshot.</param>
+            <param name="includeTime">Add a date time extension to the end of the file name.</param>
+            <param name="hideUI">Hide in-game UI?</param>
+            <param name="fileExtension">File extension to use. PNG or JPG.?</param>
+            <param name="showDebug">Print helpful Debugs to assist errors.</param>
         </member>
         <member name="T:RPS.Utils.FPSUtil">
             <summary>
