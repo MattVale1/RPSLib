@@ -33,6 +33,27 @@ namespace RPS {
                 return null;
             }
 
+            /// <summary>
+            /// Get a World Space Vector3 point based on the mouse cursor position using a mathematical plane.
+            /// </summary>
+            /// <param name="originTransform">The reference Transform used to position the mathematical plane.</param>
+            public static Vector3 GetMousePositionOnPlane(Vector2 mouseScreenPos, Camera camera, Transform originTransform) {
+                // Get raw mouse position on screen
+                Vector3 mousePosition = mouseScreenPos;
+
+                // Set up a ray and a mathematical plane
+                Ray mouseRay = camera.ScreenPointToRay(mousePosition);
+                Plane p = new Plane(Vector3.up, originTransform.position);
+
+                // If the plane is hit, return the point
+                if (p.Raycast(mouseRay, out float hitDist)) {
+                    return mouseRay.GetPoint(hitDist);
+                } else {
+                    // Otherwise return standard forward vector
+                    return originTransform.forward;
+                }
+            }
+
         }
 
     }

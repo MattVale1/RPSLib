@@ -61,6 +61,12 @@
             Get a reference to the GameObject at the mouse position using a raycast.
             </summary>
         </member>
+        <member name="M:RPS.PhysicsUtils.Raycast.GetMousePositionOnPlane(UnityEngine.Vector2,UnityEngine.Camera,UnityEngine.Transform)">
+            <summary>
+            Get a World Space Vector3 point based on the mouse cursor position using a mathematical plane.
+            </summary>
+            <param name="originTransform">The reference Transform used to position the mathematical plane.</param>
+        </member>
         <member name="M:RPS.Pooling.PoolGameObjects(UnityEngine.GameObject,System.Int32,UnityEngine.Transform)">
             <summary>
             Pool X GameObject N times with an optional parent Transform.
