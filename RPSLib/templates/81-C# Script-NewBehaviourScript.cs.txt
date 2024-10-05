@@ -6,19 +6,27 @@ using UnityEngine;
 
 public class #SCRIPTNAME# : MonoBehaviour {
 
-    #region Variables - Use Sub-regions
+    #region Private Properties
+
+    #endregion
+
+    #region Public Properties
 
     #endregion
 
 
-    #region Setup
+    #region Unity Flow
     private void Awake() {
-        CacheVars();
-    }
-
-    private void CacheVars() {
 
     }
+    #endregion
+
+    #region Private Methods
+
+    #endregion
+
+    #region Public Methods
+
     #endregion
 
 }
