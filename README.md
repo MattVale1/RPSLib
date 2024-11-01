@@ -7,7 +7,7 @@ A small (but growing) collection of common code that is used throughout all of m
 ℹ️ Most of the classes are currently Utility classes; Commonly used code that can be accessed from anywhere in your project.
 
 # RPSLib.unitypackage:
-A Unity package called "RPSLib" is also included in this repo, this contains various scripts, prefabs, render pipeline configs, intro scene and artwork. 
+A Unity package called "RPSLib" is also included in this repo, this contains various scripts, prefabs, render pipeline configs, intro scene and artwork. This package actually contains a LOT more useful code. Such as inventory management, itemisation, quests and more...
 
 ⚠️ The Red Phoenix Studios logo included in the Unity package is **NOT** for reuse or modification.
 
