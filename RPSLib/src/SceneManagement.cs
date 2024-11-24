@@ -2,11 +2,11 @@
  * Role:        Lead Game Developer
  * Company:		Red Phoenix Studios
 */
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
-namespace RPS {
+namespace RPSLib {
 
     /// <summary>
     /// Various methods to handle scene loading.

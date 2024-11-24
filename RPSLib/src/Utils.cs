@@ -4,8 +4,11 @@
 */
 using UnityEngine;
 
-namespace RPS {
+namespace RPSLib {
 
+    /// <summary>
+    /// Various functions notyet categorized.
+    /// </summary>
     public class Utils {
 
         /// <summary>

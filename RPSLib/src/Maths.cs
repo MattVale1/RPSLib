@@ -5,10 +5,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RPS {
+namespace RPSLib {
 
-    public class MathsUtils {
+    /// <summary>
+    /// Various mathematic functions.
+    /// </summary>
+    public class Maths {
 
+        /// <summary>
+        /// Distance calculations.
+        /// </summary>
         public class Distances {
 
             /// <summary>
@@ -36,6 +42,9 @@ namespace RPS {
 
         }
 
+        /// <summary>
+        /// Gradient functions.
+        /// </summary>
         public class Gradients {
 
             /// <summary>
@@ -50,6 +59,8 @@ namespace RPS {
 
         }
 
+        /// <summary>
+        /// </summary>
         public class WeightedChances {
 
             public static int GetRandomWeightedIndex(float[] weights) {

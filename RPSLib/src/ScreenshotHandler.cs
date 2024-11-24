@@ -2,12 +2,12 @@
  * Role:		Lead Game Developer
  * Company:		Red Phoenix Studios
 */
-using System.Collections.Generic;
-using UnityEngine;
-using System.IO;
 using System;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
 
-namespace RPS {
+namespace RPSLib {
 
     /// <summary>
     /// Handles taking screenshots of the game. Saves screenshots to user desktop.

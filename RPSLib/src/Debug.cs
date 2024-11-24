@@ -2,7 +2,7 @@
  * Role:		Lead Game Developer
  * Company:		Red Phoenix Studios
 */
-namespace RPS {
+namespace RPSLib {
 
     /// <summary>
     /// Class to handle console printing with various styles.

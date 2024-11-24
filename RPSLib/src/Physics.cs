@@ -4,10 +4,16 @@
 */
 using UnityEngine;
 
-namespace RPS {
+namespace RPSLib {
 
-    public class PhysicsUtils {
+    /// <summary>
+    /// Physics related helpers.
+    /// </summary>
+    public class Physics {
 
+        /// <summary>
+        /// Raycast specific helpers.
+        /// </summary>
         public class Raycast {
 
             /// <summary>
@@ -26,7 +32,7 @@ namespace RPS {
                     ray = sourceCamera.ScreenPointToRay(Input.mousePosition);
                 }
 
-                if (Physics.Raycast(ray, out RaycastHit rayHit, rayDistance, maskToCheck)) {
+                if (UnityEngine.Physics.Raycast(ray, out RaycastHit rayHit, rayDistance, maskToCheck)) {
                     return rayHit.transform.gameObject;
                 }
 

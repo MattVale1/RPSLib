@@ -4,9 +4,9 @@
 */
 using UnityEngine;
 
-namespace RPS {
+namespace RPSLib {
 
-    public class GeometryUtils {
+    public class Geometry {
 
         public class Visibility {
 

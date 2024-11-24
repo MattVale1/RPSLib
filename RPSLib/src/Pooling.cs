@@ -4,8 +4,11 @@
 */
 using UnityEngine;
 
-namespace RPS {
+namespace RPSLib {
 
+    /// <summary>
+    /// Basic pooling system methods.
+    /// </summary>
     public class Pooling {
 
         /// <summary>
