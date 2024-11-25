@@ -21,10 +21,10 @@ Within your code, you can access the DLL by simply typing `RPSLib.` and then the
 ### Examples:
 ```
 // Returns a GameObject at the mouse position.
-clickedObject = RPSLib.PhysicsUtils.Raycast.GetGameObjectAtMousePosition(rayDistance, buildingMask, mainCamera);
+clickedObject = RPSLib.Physics.Raycast.GetGameObjectAtMousePosition(rayDistance, buildingMask, mainCamera);
 
 // Returns a float value representing the distance between 2 objects, using square magnitude.
-inspectedDistance = RPSLib.MathsUtils.Distances.GetFastDistance(fromPos, toPos);
+inspectedDistance = RPSLib.Maths.Distances.GetFastDistance(fromPos, toPos);
 
 // If we loaded the current scene Additively, go back to the previous scene and set it as the active scene.
 RPSLib.SceneManagement.NavigateSceneBack(true);
