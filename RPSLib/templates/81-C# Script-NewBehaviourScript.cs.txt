@@ -1,32 +1,41 @@
-/* Author:		Matthew Vale
+﻿/* Author:		Matthew Vale
  * Role:		Lead Game Developer
  * Company:		Red Phoenix Studios
 */
 using UnityEngine;
 
-public class #SCRIPTNAME# : MonoBehaviour {
+namespace GameCore {
 
-    #region Private Properties
+    public class #SCRIPTNAME#: MonoBehaviour {
 
-    #endregion
+        #region Private Properties
 
-    #region Public Properties
+        #endregion
 
-    #endregion
+        #region Public Properties
+
+        #endregion
 
 
-    #region Unity Flow
-    private void Awake() {
+        #region Unity Flow
+
+        private void Awake() {
+            CacheData();
+        }
+
+        #endregion
+
+        #region Private Methods
+
+        private void CacheData() {
+
+        }
+
+        #endregion
+
+        #region Public Methods
+
+        #endregion
 
     }
-    #endregion
-
-    #region Private Methods
-
-    #endregion
-
-    #region Public Methods
-
-    #endregion
-
 }
