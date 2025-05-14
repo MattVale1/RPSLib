@@ -22,6 +22,16 @@
             <param name="style">The style to use.</param>
             <param name="pauseEditor">Should we pause the Unity Editor for this error?</param>
         </member>
+        <member name="T:RPSLib.Geometry">
+            <summary>
+            Gemoetry class to handle various geometric calculations.
+            </summary>
+        </member>
+        <member name="T:RPSLib.Geometry.Visibility">
+            <summary>
+            Provides methods for determining the visibility of objects relative to a camera's view frustum.
+            </summary>
+        </member>
         <member name="M:RPSLib.Geometry.Visibility.IsTargetVisible(UnityEngine.Camera,UnityEngine.Vector3)">
             <summary>
             Given a Vector3 point, is that point currently visible to the camera?
@@ -49,7 +59,9 @@
         </member>
         <member name="M:RPSLib.Maths.Distances.GetFastDistance(UnityEngine.Vector3,UnityEngine.Vector3)">
             <summary>
-            Get the distance between 2 positions using square magnitude.
+            Get the distance between 2 objects, fast, for simple comparison. 
+            <br></br>This is NOT 100% accurate, but faster than using Vector3.Distance.
+            <br></br>Use Vector3.Distance if you need the actual distance.
             </summary>
         </member>
         <member name="M:RPSLib.Maths.Distances.GetClosestGameObject(UnityEngine.Vector3,System.Collections.Generic.List{UnityEngine.GameObject})">
@@ -73,6 +85,13 @@
         </member>
         <member name="T:RPSLib.Maths.WeightedChances">
             <summary>
+            Weighted chances functions.
+            </summary>
+        </member>
+        <member name="M:RPSLib.Maths.WeightedChances.GetRandomWeightedIndex(System.Single[])">
+            <summary>
+            Selects a random index from the given array of weights, where the probability of each index being
+            selected is proportional to its weight.
             </summary>
         </member>
         <member name="T:RPSLib.Physics">
