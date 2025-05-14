@@ -37,6 +37,26 @@
             Given a Vector3 point, is that point currently visible to the camera?
             </summary>
         </member>
+        <member name="T:RPSLib.Graphics">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:RPSLib.Graphics.Display">
+            <summary>
+            Display settings such as VSync, FPS and screen resolution.
+            </summary>
+        </member>
+        <member name="M:RPSLib.Graphics.Display.SetFramesPerSecond(System.Int32,RPSLib.Graphics.Display.VSyncMode)">
+            <summary>
+            Set the Application's target framerate and VSync mode (default ON).
+            </summary>
+        </member>
+        <member name="M:RPSLib.Graphics.Display.SetVSyncMode(RPSLib.Graphics.Display.VSyncMode)">
+            <summary>
+            Set the Application's vertical sync mode.
+            </summary>
+        </member>
         <member name="T:RPSLib.LineRendering">
             <summary>
             For all things LineRenderer!
@@ -171,29 +191,24 @@
             <param name="fileExtension">File extension to use. PNG or JPG.?</param>
             <param name="showDebug">Print helpful Debugs to assist errors.</param>
         </member>
-        <member name="T:RPSLib.Utils">
+        <member name="T:RPSLib.Time">
             <summary>
-            Various functions notyet categorized.
+            Various helpers for manipulating time.
             </summary>
         </member>
-        <member name="T:RPSLib.Utils.FPSUtil">
+        <member name="M:RPSLib.Time.SetTimeScale(System.Single)">
             <summary>
-            Frame rate and VSync setting.
+            Sets the time scale.
             </summary>
         </member>
-        <member name="M:RPSLib.Utils.FPSUtil.SetFramesPerSecond(System.Int32,RPSLib.Utils.FPSUtil.VSyncMode)">
+        <member name="M:RPSLib.Time.LerpTimeScale(System.Single,System.Single,System.Single)">
             <summary>
-            Set the Application's target framerate and VSync mode (default ON).
+            Smoothly interpolates towards a target time scale. Run this outside Update functions.
             </summary>
         </member>
-        <member name="M:RPSLib.Utils.FPSUtil.SetVSyncMode(RPSLib.Utils.FPSUtil.VSyncMode)">
+        <member name="M:RPSLib.Time.LerpTimeScaleV2(System.Single,System.Single,System.Single)">
             <summary>
-            Set the Application's vertical sync mode.
-            </summary>
-        </member>
-        <member name="T:RPSLib.Utils.TimeUtil">
-            <summary>
-            Game time manipulation.
+            Smoothly interpolates towards a target time scale. Run this inside Update function.
             </summary>
         </member>
     </members>
