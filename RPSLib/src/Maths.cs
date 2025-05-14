@@ -39,7 +39,7 @@ namespace RPSLib
                 for (int i = 0; i < targets.Count; i++)
                 {
                     float distanceToTarget = Vector3.Distance(targets[i].transform.position, from);
-                    if (distanceToTarget < minDistSqr)
+                    if (distanceToTarget < minDist)
                     {
                         minDist = distanceToTarget;
                         closestIndex = (byte)i;
