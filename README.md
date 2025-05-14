@@ -36,12 +36,13 @@ RPSLib.ScreenshotHandler.TakeScreenshot("Screenshot", true, true, RPSLib.Screens
 # Class list and functions:
 | Class | Description |
 | ------------- | ------------- |
-| Debug | For console logging with custom styles. |
-| Geometry | Checking if mesh is visible. |
+| Debug | For console printing with various styles. |
+| Geometry | For handling various geometric calculations. |
+| Graphics | Display and Graphical settings. |
 | LineRendering | For performing various actions with LineRenderers. |
-| Maths | Various maths functions. Currently distance checks and curves. |
+| Maths | Various maths functions such as distance checks, weights and curves. |
 | Physics | Raycasting related functions, including getting GameObject at mouse. |
 | Pooling | For object pooling. Returns/iterates a list of pooled objects.
 | SceneManagement | For more complex scene handling. Including Additive scene loading and a back stack for navigating to previously loaded scenes.
 | ScreenshotHandler | For capturing screenshots in-game. Offers optional file formats, custom filename and the option to hide all UI while capturing. |
-| Utils | Uncategorised helpers. Will likely move them into specific classes soon. |
+| Time | Time manipulation. |
