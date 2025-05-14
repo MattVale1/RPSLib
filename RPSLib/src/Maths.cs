@@ -1,24 +1,29 @@
-﻿/* Author:		Matthew Vale
- * Role:		Lead Game Developer
- * Company:		Red Phoenix Studios
-*/
+﻿/// ------------------------------
+/// Original Author: Matthew Vale
+/// ------------------------------
+
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RPSLib {
+namespace RPSLib
+{
 
     /// <summary>
     /// Various mathematic functions.
     /// </summary>
-    public class Maths {
+    public class Maths
+    {
 
         /// <summary>
         /// Distance calculations.
         /// </summary>
-        public class Distances {
+        public class Distances
+        {
 
             /// <summary>
-            /// Get the distance between 2 positions using square magnitude.
+            /// Get the distance between 2 objects, fast, for simple comparison. 
+            /// <br></br>This is NOT 100% accurate, but faster than using Vector3.Distance.
+            /// <br></br>Use Vector3.Distance if you need the actual distance.
             /// </summary>
             public static float GetFastDistance(Vector3 from, Vector3 to) { return (to - from).sqrMagnitude; }
 
@@ -27,16 +32,20 @@ namespace RPSLib {
             /// </summary>
             /// <param name="from">Point of origin.</param>
             /// <param name="targets">List of possible targets.</param>
-            public static GameObject GetClosestGameObject(Vector3 from, List<GameObject> targets) {
+            public static GameObject GetClosestGameObject(Vector3 from, List<GameObject> targets)
+            {
                 byte closestIndex = 0;
-                float minDistSqr = Mathf.Infinity;
-                for (int i = 0; i < targets.Count; i++) {
-                    float dSqrToTarget = GetFastDistance(targets[i].transform.position, from);
-                    if (dSqrToTarget < minDistSqr) {
-                        minDistSqr = dSqrToTarget;
+                float minDist = Mathf.Infinity;
+                for (int i = 0; i < targets.Count; i++)
+                {
+                    float distanceToTarget = Vector3.Distance(targets[i].transform.position, from);
+                    if (distanceToTarget < minDistSqr)
+                    {
+                        minDist = distanceToTarget;
                         closestIndex = (byte)i;
                     }
                 }
+
                 return targets[closestIndex];
             }
 
@@ -45,14 +54,16 @@ namespace RPSLib {
         /// <summary>
         /// Gradient functions.
         /// </summary>
-        public class Gradients {
+        public class Gradients
+        {
 
             /// <summary>
             /// Useful for smooth animations. Equation is: 
             /// <code>x / x + 1</code>
             /// See <a href="LINK">https://www.desmos.com/calculator/0mxrzgwqgt</a>
             /// </summary>
-            public static float SoftLimit(float x) {
+            public static float SoftLimit(float x)
+            {
                 x = Mathf.Max(x, 0);
                 return x / (x + 1);
             }
@@ -60,24 +71,37 @@ namespace RPSLib {
         }
 
         /// <summary>
+        /// Weighted chances functions.
         /// </summary>
-        public class WeightedChances {
+        public class WeightedChances
+        {
 
-            public static int GetRandomWeightedIndex(float[] weights) {
+            /// <summary>
+            /// Selects a random index from the given array of weights, where the probability of each index being
+            /// selected is proportional to its weight.
+            /// </summary>
+            public static int GetRandomWeightedIndex(float[] weights)
+            {
 
                 if (weights == null || weights.Length == 0)
+                {
                     return -1;
+                }
 
                 float w;
                 float t = 0;
                 int i; // Use the same float for both loops
 
-                for (i = 0; i < weights.Length; i++) {
+                for (i = 0; i < weights.Length; i++)
+                {
                     w = weights[i];
 
-                    if (float.IsPositiveInfinity(w)) {
+                    if (float.IsPositiveInfinity(w))
+                    {
                         return i;
-                    } else if (w >= 0f && !float.IsNaN(w)) {
+                    }
+                    else if (w >= 0f && !float.IsNaN(w))
+                    {
                         t += weights[i];
                     }
                 }
@@ -85,7 +109,8 @@ namespace RPSLib {
                 float r = Random.value;
                 float s = 0f;
 
-                for (i = 0; i < weights.Length; i++) {
+                for (i = 0; i < weights.Length; i++)
+                {
                     w = weights[i];
                     if (float.IsNaN(w) || w <= 0f)
                         continue;

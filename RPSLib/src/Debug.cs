@@ -1,18 +1,21 @@
-﻿/* Author:		Matthew Vale
- * Role:		Lead Game Developer
- * Company:		Red Phoenix Studios
-*/
-namespace RPSLib {
+﻿/// ------------------------------
+/// Original Author: Matthew Vale
+/// ------------------------------
+
+namespace RPSLib
+{
 
     /// <summary>
     /// Class to handle console printing with various styles.
     /// </summary>
-    public class Debug {
+    public class Debug
+    {
 
         /// <summary>
         /// Various styling types.
         /// </summary>
-        public enum Style {
+        public enum Style
+        {
             Normal,
             Success,
             Warning,
@@ -26,8 +29,10 @@ namespace RPSLib {
         /// <param name="message">The message to print.</param>
         /// <param name="style">The style to use.</param>
         /// <param name="pauseEditor">Should we pause the Unity Editor for this error?</param>
-        public static void Log(string message, Style style = Style.Normal, bool pauseEditor = false) {
-            switch (style) {
+        public static void Log(string message, Style style = Style.Normal, bool pauseEditor = false)
+        {
+            switch (style)
+            {
                 case Style.Normal:
                     UnityEngine.Debug.Log(message);
                     break;
@@ -46,7 +51,9 @@ namespace RPSLib {
             }
 
             if (pauseEditor)
+            {
                 UnityEngine.Debug.Break();
+            }
         }
 
     }

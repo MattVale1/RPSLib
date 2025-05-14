@@ -1,39 +1,48 @@
-﻿/* Author:		Matthew Vale
- * Role:		Lead Game Developer
- * Company:		Red Phoenix Studios
-*/
+﻿/// ------------------------------
+/// Original Author: Matthew Vale
+/// ------------------------------
+
 using UnityEngine;
 
-namespace RPSLib {
+namespace RPSLib
+{
 
     /// <summary>
     /// Various functions notyet categorized.
     /// </summary>
-    public class Utils {
+    public class Utils
+    {
 
         /// <summary>
         /// Frame rate and VSync setting.
         /// </summary>
-        public class FPSUtil {
+        public class FPSUtil
+        {
 
             public enum VSyncMode { OFF, ON }
 
             /// <summary>
             /// Set the Application's target framerate and VSync mode (default ON).
             /// </summary>
-            public static void SetFramesPerSecond(int targetFPS, VSyncMode vsync = VSyncMode.ON) {
-                if (vsync == VSyncMode.ON) {
+            public static void SetFramesPerSecond(int targetFPS, VSyncMode vsync = VSyncMode.ON)
+            {
+                if (vsync == VSyncMode.ON)
+                {
                     QualitySettings.vSyncCount = 1;
-                } else {
+                }
+                else
+                {
                     QualitySettings.vSyncCount = 0;
                 }
+
                 Application.targetFrameRate = targetFPS;
             }
 
             /// <summary>
             /// Set the Application's vertical sync mode.
             /// </summary>
-            public static void SetVSyncMode(VSyncMode mode) {
+            public static void SetVSyncMode(VSyncMode mode)
+            {
                 QualitySettings.vSyncCount = (int)mode;
             }
         }
@@ -41,14 +50,18 @@ namespace RPSLib {
         /// <summary>
         /// Game time manipulation.
         /// </summary>
-        public class TimeUtil {
+        public class TimeUtil
+        {
 
-            public static void SetTimeScale(float value) {
+            public static void SetTimeScale(float value)
+            {
                 Time.timeScale = value;
             }
 
-            public static void LerpTimeScale(float from, float to, float atSpeedOf) {
-                while (Time.timeScale != to) {
+            public static void LerpTimeScale(float from, float to, float atSpeedOf)
+            {
+                while (Time.timeScale != to)
+                {
                     Time.timeScale = Mathf.MoveTowards(from, to, atSpeedOf) * Time.unscaledDeltaTime;
                 }
             }
