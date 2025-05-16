@@ -1,0 +1,15 @@
+MUSIC:
+Load Type: Compressed in memory
+Preload Audio Data: True
+Compression Format: Vorbis
+Quality : variable (30-50)
+Sample Rate Settings: Preserve
+Notes: Keep the Ratio as high as possible, above 30% ideally. 
+
+FAST AUDIO CLIPS (bullets):
+Load Type: Decompress On Load
+Preload Audio Data: True
+Compression Format: PCM
+Quality : variable (30-50)
+Sample Rate Settings: Preserve
+Notes: Keep the Ratio as high as possible, above 30% ideally. 

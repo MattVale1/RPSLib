@@ -1,0 +1,6 @@
+HIGH ACCURACY PHYSICS:
+Fixed Timestep:	120FPS --- 0.00833333
+		60FPS --- 0.0167
+		30FPS --- 0.0334
+Maximum Allowed Timestep: 0.02
+Maximum Particle Timestep: 0.03
