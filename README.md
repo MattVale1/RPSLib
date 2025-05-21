@@ -1,11 +1,11 @@
 # RPSLib DLL:
 A small (but growing) collection of common code that is used throughout all of my Unity projects. The idea is to:
-- Save time re-writing the same code each project or in various classes.
+- Save time re-writing the same code for each project.
 - Provide optimized code for common operations, aiding in high performance for runtime.
 - Provide easy to use methods for more complex algorithms.
 
 # RPSLib.unitypackage:
-A Unity package called "RPSLib" is also included in this repo, this contains various scripts, prefabs, render pipeline configs, intro scene and artwork. This package actually contains a LOT more useful code. Such as inventory management, itemisation, quests and more...
+A Unity package called "RPSLib" is also included in this repo, this contains various scripts, prefabs, render pipeline configs, an intro scene and artwork. This package actually contains a LOT more useful code. Such as inventory management, itemisation, quests and more...
 
 ⚠️ The Red Phoenix Studios logo included in the Unity package is **NOT** for reuse or modification.
 
@@ -17,7 +17,7 @@ Or, you can use the files provided in the bin.
 The RPS.unitypackage can also simply be dropped into your project. 
 
 # Usage:
-Within your code, you can access the DLL by simply typing `RPSLib.` and then the class you require, or by importing RPS at the top of your file with `using RPSLib;`.
+Within your code, you can access the DLL by simply typing `RPSLib.` and then the class you require (like any other library), or by importing RPS at the top of your file with `using RPSLib;`.
 ### Examples:
 ```
 // Returns a GameObject at the mouse position.
