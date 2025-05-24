@@ -1,0 +1,15 @@
+{
+    "name": "com.redphoenixstudios.rpslib",
+    "displayName": "RPSLib",
+    "description": "A package containing common code and assets that can be used throughout multiple Unity projects.",
+    "version": "1.0.0",
+    "author": {
+        "name": "Matthew Vale",
+        "email": "redpstudios@gmail.ocm",
+        "url": "https://github.com/matthewvale/RPSLib"
+    },
+    "dependencies": {
+        "com.rlabrecque.steamworks.net": "2024.8.0",
+        "com.unity.localization": "1.5.4"
+    }
+}
