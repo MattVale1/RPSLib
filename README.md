@@ -12,8 +12,11 @@ A Unity package called "RPSLib" is also included in this repo, this contains var
 ⚠️ A third-party asset is included in this package, "LeanTween". This is the free edition and should also not be redistributed. Credit to [LeanTween](https://assetstore.unity.com/packages/tools/animation/leantween-3595) by [dentedpixel](https://github.com/dentedpixel/LeanTween)
 
 # Installation:
-Create a release build of the project, this will produce a RPS.dll and RPS.xml file, simply copy/paste these file into your Unity project.
-Or, you can use the files provided in the bin.
+**Easy:**
+Go to [Releases](https://github.com/matthewvale/RPSLib/releases), select the latest and copy the provided UPM URL. Open Unity Package Manager and select "Install package from git url..." and paste the URL.
+
+**Manual:**
+In _RPSLib/bin/Release/netstandard2.1_, we have `RPS.dll` and `RPS.xml` files, simply copy/paste these file into your Unity project.
 The RPS.unitypackage can also simply be dropped into your project. 
 
 # Usage:
