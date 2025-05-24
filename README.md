@@ -1,5 +1,5 @@
-# RPSLib DLL:
-A small (but growing) collection of common code that is used throughout all of my Unity projects. The idea is to:
+# RPSLib.DLL:
+A growing collection of common code that is used throughout all of my Unity projects. The idea is to:
 - Save time re-writing the same code for each project.
 - Provide optimized code for common operations, aiding in high performance for runtime.
 - Provide easy to use methods for more complex algorithms.
@@ -9,10 +9,14 @@ A Unity package called "RPSLib" is also included in this repo, this contains var
 
 ⚠️ The Red Phoenix Studios logo included in the Unity package is **NOT** for reuse or modification.
 
-⚠️ A third-party asset is included in this package, "LeanTween". This is the free edition and should also not be redistributed. Credit to [LeanTween](https://assetstore.unity.com/packages/tools/animation/leantween-3595) by [dentedpixel](https://github.com/dentedpixel/LeanTween)
+# Third-party packages included:
+
+`LeanTween` This is the free edition and should also not be redistributed. Credit to [LeanTween](https://assetstore.unity.com/packages/tools/animation/leantween-3595) by [dentedpixel](https://github.com/dentedpixel/LeanTween).
+
+`Steamworks.NET` See the [Documentation](https://steamworks.github.io/gettingstarted/) and [GitHub](https://github.com/rlabrecque/Steamworks.NET).
 
 # Installation:
-- Install the RPSLib package by drag and dropping RPSLib.unitypackage into your project. The package will always contain the latest DLL.
+- Install the RPSLib package by dropping `RPSLib.unitypackage` into your project. The package will always contain the latest DLL, so no need to build the project.
 
 **Dependencies:**
 - Steamworks.NET (included in RPSLib.unitypackage)
