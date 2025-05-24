@@ -12,12 +12,11 @@ A Unity package called "RPSLib" is also included in this repo, this contains var
 ⚠️ A third-party asset is included in this package, "LeanTween". This is the free edition and should also not be redistributed. Credit to [LeanTween](https://assetstore.unity.com/packages/tools/animation/leantween-3595) by [dentedpixel](https://github.com/dentedpixel/LeanTween)
 
 # Installation:
-**Easy:**
-Go to [Releases](https://github.com/matthewvale/RPSLib/releases), select the latest and copy the provided UPM URL. Open Unity Package Manager and select "Install package from git url..." and paste the URL.
+- Install the RPSLib package by drag and dropping RPSLib.unitypackage into your project. The package will always contain the latest DLL.
 
-**Manual:**
-In _RPSLib/bin/Release/netstandard2.1_, we have `RPS.dll` and `RPS.xml` files, simply copy/paste these file into your Unity project.
-The RPS.unitypackage can also simply be dropped into your project. 
+**Dependencies:**
+- https://github.com/rlabrecque/Steamworks.NET/releases (please grab the latest via UPM)
+- Unity Localization package
 
 # Usage:
 Within your code, you can access the DLL by simply typing `RPSLib.` and then the class you require (like any other library), or by importing RPS at the top of your file with `using RPSLib;`.
