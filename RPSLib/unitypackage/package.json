@@ -1,8 +1,8 @@
 {
-    "name": "com.redphoenixstudios.rpslib",
+    "name": "com.matthewvale.rpslib",
     "displayName": "RPSLib",
     "description": "A package containing common code and assets that can be used throughout multiple Unity projects.",
-    "version": "v1.0.1-beta",
+    "version": "v1.0.2-beta",
     "author": {
         "name": "Matthew Vale",
         "email": "redpstudios@gmail.ocm",
