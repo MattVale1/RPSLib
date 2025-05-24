@@ -15,8 +15,8 @@ A Unity package called "RPSLib" is also included in this repo, this contains var
 - Install the RPSLib package by drag and dropping RPSLib.unitypackage into your project. The package will always contain the latest DLL.
 
 **Dependencies:**
-- https://github.com/rlabrecque/Steamworks.NET/releases (please grab the latest via UPM)
-- Unity Localization package
+- Steamworks.NET (included in RPSLib.unitypackage)
+- Unity Localization package (please fetch this yourself)
 
 # Usage:
 Within your code, you can access the DLL by simply typing `RPSLib.` and then the class you require (like any other library), or by importing RPS at the top of your file with `using RPSLib;`.
