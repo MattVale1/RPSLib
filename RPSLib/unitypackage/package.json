@@ -2,10 +2,10 @@
     "name": "com.matthewvale.rpslib",
     "displayName": "RPSLib",
     "description": "A package containing common code and assets that can be used throughout multiple Unity projects.",
-    "version": "v1.0.2-beta",
+    "version": "1.0.2-beta",
     "author": {
         "name": "Matthew Vale",
-        "email": "redpstudios@gmail.ocm",
+        "email": "redpstudios@gmail.com",
         "url": "https://github.com/matthewvale/RPSLib"
     },
     "dependencies": {
