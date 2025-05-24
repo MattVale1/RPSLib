@@ -17,6 +17,7 @@ namespace RPSLib
         public enum Style
         {
             Normal,
+            Informational,
             Success,
             Warning,
             Error,
@@ -35,6 +36,9 @@ namespace RPSLib
             {
                 case Style.Normal:
                     UnityEngine.Debug.Log(message);
+                    break;
+                case Style.Informational:
+                    UnityEngine.Debug.Log("<color=cyan>" + message + "</color>");
                     break;
                 case Style.Success:
                     UnityEngine.Debug.Log("<color=green>" + message + "</color>");
