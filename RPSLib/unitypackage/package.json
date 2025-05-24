@@ -9,7 +9,7 @@
         "url": "https://github.com/matthewvale/RPSLib"
     },
     "dependencies": {
-        "com.rlabrecque.steamworks.net": "https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net#2024.8.0",
+        "com.rlabrecque.steamworks.net": "2024.8.0",
         "com.unity.localization": "1.5.4"
     }
 }
