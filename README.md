@@ -13,7 +13,7 @@ A Unity package called "RPSLib" is also included in this repo, this contains var
 
 # Installation:
 **Easy:**
-Go to [Releases](https://github.com/matthewvale/RPSLib/releases), select the latest and copy the provided UPM URL. Open Unity Package Manager and select "Install package from git url..." and paste the URL.
+Go to [Releases](https://github.com/matthewvale/RPSLib/releases), select the latest and copy the provided UPM URL. Open Unity Package Manager and select "Install package from git url..." and paste the URL. After installing, double click the `RPSLib` asset to finish installing the package.
 
 **Manual:**
 In _RPSLib/bin/Release/netstandard2.1_, we have `RPS.dll` and `RPS.xml` files, simply copy/paste these file into your Unity project.
