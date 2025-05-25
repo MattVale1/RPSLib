@@ -1,11 +1,11 @@
-# RPSLib.DLL:
+# RPSLib.dll:
 A growing collection of common code that is used throughout all of my Unity projects. The idea is to:
 - Save time re-writing the same code for each project.
 - Provide optimized code for common operations, aiding in high performance for runtime.
 - Provide easy to use methods for more complex algorithms.
 
 # RPSLib.unitypackage:
-A Unity package called "RPSLib" is also included in this repo, this contains various scripts, prefabs, render pipeline configs, an intro scene and artwork. This package actually contains a LOT more useful code. Such as inventory management, itemisation, quests and more...
+This Unity package is also included in this repo and is all you need to use this library. It contains various scripts, prefabs, render pipeline configs, UI elements, a splash scene and more. Some systems included are inventory management, itemisation and ScriptableObject based quests.
 
 ⚠️ The Red Phoenix Studios logo included in the Unity package is **NOT** for reuse or modification.
 
