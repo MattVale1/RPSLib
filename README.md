@@ -16,6 +16,8 @@ This Unity package is also included in this repo and is all you need to use this
 `Steamworks.NET` See the [Documentation](https://steamworks.github.io/gettingstarted/) and [GitHub](https://github.com/rlabrecque/Steamworks.NET).
 
 # Installation:
+- Install `RPSLib.dll` by dropping the file into your project. Ideally in it's own unique folder. Simple!
+
 - Install the RPSLib package by dropping `RPSLib.unitypackage` into your project. The package will always contain the latest DLL, so no need to build the project unless you edit the source files. If you do edit the source and make a build, copy the `RPSLib.dll` and `RPSLib.xml` into your project, overriding the existing files.
 
 **Dependencies:**
