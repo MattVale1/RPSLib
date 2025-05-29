@@ -1,5 +1,5 @@
 # RPSLib.dll:
-A growing collection of common code that is used throughout all of my Unity projects. The idea is to:
+Named after my game studio alias, Red Phoenix Studios. A growing collection of common code that is used throughout all of my Unity projects. The idea is to:
 - Save time re-writing the same code for each project.
 - Provide optimized code for common operations, aiding in high performance for runtime.
 - Provide easy to use methods for more complex algorithms.
