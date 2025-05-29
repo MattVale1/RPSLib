@@ -1,4 +1,4 @@
-# RPSLib.dll:
+# RPS.dll:
 Named after my game studio alias, Red Phoenix Studios. A growing collection of common code that is used throughout all of my Unity projects. The idea is to:
 - Save time re-writing the same code for each project.
 - Provide optimized code for common operations, aiding in high performance for runtime.
@@ -16,16 +16,16 @@ This Unity package is also included in this repo and is all you need to use this
 `Steamworks.NET` See the [Documentation](https://steamworks.github.io/gettingstarted/) and [GitHub](https://github.com/rlabrecque/Steamworks.NET).
 
 # Installation:
-- Install `RPSLib.dll` by dropping the file into your project. Ideally in it's own unique folder. Simple!
+- Install `RPS.dll` by dropping the file into your project. Ideally in it's own unique folder. Simple!
 
-- Install the RPSLib package by dropping `RPSLib.unitypackage` into your project. The package will always contain the latest DLL, so no need to build the project unless you edit the source files. If you do edit the source and make a build, copy the `RPSLib.dll` and `RPSLib.xml` into your project, overriding the existing files.
+- Install the RPSLib package by dropping `RPSLib.unitypackage` into your project. The package will always contain the latest DLL, so no need to build the project unless you edit the source files. If you do edit the source and make a build, copy the `RPS.dll` and `RPS.xml` into your project, overriding the existing files.
 
 **Dependencies:**
 - Steamworks.NET (included in RPSLib.unitypackage)
 - Unity Localization package (please fetch this yourself)
 
 # Usage:
-Within your code, you can access the DLL by simply typing `RPSLib.` and then the class you require (like any other library), or by importing RPS at the top of your file with `using RPSLib;`.
+Within your code, you can access the DLL by simply typing `RPSLib.` and then the class you require, or by importing RPS at the top of your file with `using RPSLib;`.
 ### Examples:
 ```
 // Returns a GameObject at the mouse position.
