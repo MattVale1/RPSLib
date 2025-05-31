@@ -62,7 +62,7 @@
             For all things LineRenderer!
             </summary>
         </member>
-        <member name="M:RPSLib.LineRendering.SetPositionsOfLineRenderer(UnityEngine.LineRenderer,UnityEngine.Vector3,UnityEngine.Vector3)">
+        <member name="M:RPSLib.LineRendering.SetPositionsOfLineRenderer(UnityEngine.LineRenderer,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)">
             <summary>
             Takes a simple 2-point line renderer and draws it.
             </summary>
