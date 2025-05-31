@@ -11,16 +11,14 @@ This Unity package is also included in this repo and is all you need to use this
 
 # Third-party packages included:
 
-The free edition of [LeanTween](https://assetstore.unity.com/packages/tools/animation/leantween-3595) by [dentedpixel](https://github.com/dentedpixel/LeanTween). For all kinds of tweening animations.
-
-[Steamworks](https://steamworks.github.io/gettingstarted/) by [Riley Labrecque](https://github.com/rlabrecque/Steamworks.NET). A C# wrapper for  the Steamworks API.
+- The free edition of [LeanTween](https://assetstore.unity.com/packages/tools/animation/leantween-3595) by [dentedpixel](https://github.com/dentedpixel/LeanTween). For all kinds of tweening animations.
+- [Steamworks](https://steamworks.github.io/gettingstarted/) by [Riley Labrecque](https://github.com/rlabrecque/Steamworks.NET). A C# wrapper for  the Steamworks API.
 
 # Installation:
 Head to [Releases](https://github.com/matthewvale/RPSLib/releases) and grab the files you need.
 
-- (DLL-only) Install `RPS.dll` and `RPS.xml` by dropping the file into your project. Ideally in it's own unique folder. Simple!
-
-- (Unity Package) Install the RPSLib package by dropping `RPSLib.unitypackage` into your project. The package will always contain the latest `RPS.dll`, so no need to grab them if yo use the package, nor build the project unless you edit the source files. If you do edit the source and make a build, copy the `RPS.dll` and `RPS.xml` into your project, overriding the existing files.
+- **(DLL-only)** Install `RPS.dll` and `RPS.xml` by dropping the file into your project. Ideally in it's own unique folder. Simple!
+- **(Unity Package)** Install the RPSLib package by dropping `RPSLib.unitypackage` into your project. The package will always contain the latest `RPS.dll`, so no need to grab them if yo use the package, nor build the project unless you edit the source files. If you do edit the source and make a build, copy the `RPS.dll` and `RPS.xml` into your project, overriding the existing files.
 
 **Dependencies:**
 - Steamworks.NET (included in RPSLib.unitypackage)
