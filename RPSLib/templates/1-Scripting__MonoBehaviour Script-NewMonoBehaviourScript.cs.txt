@@ -4,22 +4,27 @@
 
 using UnityEngine;
 
-namespace GameCore {
+namespace GameCore
+{
 
-    public class #SCRIPTNAME#: MonoBehaviour {
+    public class #SCRIPTNAME# : MonoBehaviour
+    {
 
         #region Private Properties
+
 
         #endregion
 
         #region Public Properties
+
 
         #endregion
 
 
         #region Unity Flow
 
-        private void Awake() {
+        private void Awake()
+        {
             CacheData();
         }
 
@@ -27,13 +32,16 @@ namespace GameCore {
 
         #region Private Methods
 
-        private void CacheData() {
+        private void CacheData()
+        {
 
         }
 
         #endregion
 
         #region Public Methods
+
+
 
         #endregion
 
