@@ -54,3 +54,6 @@ RPSLib.ScreenshotHandler.TakeScreenshot("Screenshot", true, true, RPSLib.Screens
 | SceneManagement | For more complex scene handling. Including Additive scene loading and a back stack for navigating to previously loaded scenes.
 | ScreenshotHandler | For capturing screenshots in-game. Offers optional file formats, custom filename and the option to hide all UI while capturing. |
 | Time | Time manipulation. |
+
+Contribution:
+PRs are welcome here. See contribution rules here.
