@@ -56,4 +56,4 @@ RPSLib.ScreenshotHandler.TakeScreenshot("Screenshot", true, true, RPSLib.Screens
 | Time | Time manipulation. |
 
 Contribution:
-PRs are welcome here. See contribution rules here.
+PRs are welcome here. See contribution rules [here](https://github.com/matthewvale/RPSLib/blob/develop/CONTRIBUTIONS.md).
