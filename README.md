@@ -55,5 +55,7 @@ RPSLib.ScreenshotHandler.TakeScreenshot("Screenshot", true, true, RPSLib.Screens
 | ScreenshotHandler | For capturing screenshots in-game. Offers optional file formats, custom filename and the option to hide all UI while capturing. |
 | Time | Time manipulation. |
 
-Contribution:
-PRs are welcome here. See contribution rules [here](https://github.com/matthewvale/RPSLib/blob/develop/CONTRIBUTIONS.md).
+# Contribution:
+PRs are welcome here. See [contribution rules](https://github.com/matthewvale/RPSLib/blob/develop/CONTRIBUTIONS.md).
+Please branch off the `develop` branch.
+You are also welcome to edit the RPSLib.unitypackage, but please be explicit in your changes.
